@@ -47,8 +47,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="n2L-eK-VFw" id="cec-mK-gTI"/>
-                                    <outlet property="delegate" destination="n2L-eK-VFw" id="GCG-ei-FcW"/>
+                                    <outlet property="dataSource" destination="3hK-Ah-hnz" id="ygX-k4-39l"/>
+                                    <outlet property="delegate" destination="3hK-Ah-hnz" id="oyJ-7U-vAm"/>
                                 </connections>
                             </tableView>
                         </subviews>
