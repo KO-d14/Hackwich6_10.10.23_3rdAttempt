@@ -46,10 +46,6 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="3hK-Ah-hnz" id="fFQ-YN-GrQ"/>
-                                    <outlet property="delegate" destination="3hK-Ah-hnz" id="oB8-ba-6Eh"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pmq-vb-ZRh"/>
