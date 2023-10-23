@@ -18,8 +18,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //5-#2. TableView Methods to implement:
     //There are two required methods when using the UITableViewDataSource Protocol:
     //5-#3 skip
-
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     //5-#4. In the code block for the “numberOfRowsInSection” function, insert the line: return 1
         //return 1
