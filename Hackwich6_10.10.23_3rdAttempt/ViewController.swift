@@ -10,16 +10,19 @@ import UIKit
 //HW6 PART 1-8: IN-CLASS ASSIGNMENT
 //Part 5: Let’s Set Up ViewController.Swift file with delegates and delegate methods
     //5-#1. Open your ViewController.swift file and add these protocols, UITableViewDataSource & UITableViewDelegate, on the “class” line
-class ViewController: UIViewController {
-    //UITableViewDataSource, UITableViewDelegate
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    //
 //Part 6: Create an Array using an Array Literal
     //6-#1. Declare an array and name it“myFriendsArray” and add three names to your array.
     var myClassmatesArray = ["Sayuri", "Kapena", "Brendan"]
     
+    @IBOutlet weak var tableView: UITableView!
+    
+    
     //5-#2. TableView Methods to implement:
     //There are two required methods when using the UITableViewDataSource Protocol:
     //5-#3 skip
-   /* func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     //5-#4. In the code block for the “numberOfRowsInSection” function, insert the line: return 1
         //return 1
 //Part 7: Set up for Datasource methods
