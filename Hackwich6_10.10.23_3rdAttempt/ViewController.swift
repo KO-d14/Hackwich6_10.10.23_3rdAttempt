@@ -75,7 +75,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     } //closing bracket for func viewDidLoad
     
 // comment test
-//comment test commit and push 
-    
+// comment test commit and push 
 }
 
