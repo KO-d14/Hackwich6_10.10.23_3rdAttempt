@@ -26,7 +26,7 @@ Part 8: Set up Prototype Cell:
  1. change name from 'tableview cell' to 'cell' in the doc outline
 ***NOTE: ^ I forgot to add this when doing this 3rd HW6
  2. Code below
-Last step: build & run 
+Last step: build & run
 
 */
 
@@ -74,7 +74,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view.
     } //closing bracket for func viewDidLoad
     
-// comment test 
+// comment test
+// comment test 2 
 
 }
 
