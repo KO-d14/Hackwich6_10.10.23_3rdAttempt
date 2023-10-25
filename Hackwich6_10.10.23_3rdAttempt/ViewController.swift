@@ -75,6 +75,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     } //closing bracket for func viewDidLoad
     
 // comment test
-// comment test commit and push 
-}
+/*
+ - "officially" completing HW 6, In- class portion Parts 1-8; app builds normally
+ NOTE
+ - resolved the issue to errors mentioned prior <-- possibly due to the missed step of creating an IBOutlet for the tableView
+ - when attempting committing, I ran into an error e.g local repo out of date when attempting to commit and push.
+  1st ATTEMPT - Tried pulling from origin 1 (without clicking the checkbox regarding rebase); attempting to see if it would work - THAT'S WHY THE CODE THAT I FINISHED IS NOT SHOWN <-- the only actual changes I made is writing the comments for guideline ;
+ 2nd ATTEMPT - 1st ATTEMPT DIDNT WORK- tried again but with checking the checkbox - FAILED;
+ 3rd ATTEMPT - tried pulling from origin without checking the checkbox- FAILED
+ 4 ATTEMPT- same as 3rd attempt but CHECKING THE BOX FAILED
+ */
+ }
 
