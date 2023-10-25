@@ -75,6 +75,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     } //closing bracket for func viewDidLoad
     
 // comment test
+    // running with issues 
 /*
  - "officially" completing HW 6, In- class portion Parts 1-8; app builds normally
  NOTE
