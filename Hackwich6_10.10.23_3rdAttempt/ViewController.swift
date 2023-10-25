@@ -4,6 +4,31 @@
 //
 //  Created by Aina Kodaira on 10/22/23.
 //
+/*
+Hackwich 6- THE MIGHTY TABLE VIEW
+ ---------------------------------
+ (in class portion):
+Part 1: Project Set Up (5 point)
+Part 2: UI explanation
+
+ Part 3: Let’s Set up Main.Storyboard
+1. adding table View
+2. adding table view cell
+3. opening doc outline
+4. (brief verification)
+5. connecting delegates and dataSource
+
+Part 4: dataSource & delegate explanation
+Part 5 #1-4: code below
+Part 6: code below
+Part 7 #1-3: code below
+Part 8: Set up Prototype Cell:
+ 1. change name from 'tableview cell' to 'cell' in the doc outline
+***NOTE: ^ I forgot to add this when doing this 3rd HW6
+ 2. Code below
+Last step: build & run 
+
+*/
 
 import UIKit
 
@@ -16,6 +41,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //6-#1. Declare an array and name it“myFriendsArray” and add three names to your array.
     var myClassmatesArray = ["Sayuri", "Kapena", "Brendan"]
     
+//2. Create an outlet for your table view and name it, “tableView”.
+  /* ***NOTE: ^ I missed this step when doing this 3rd HW6
+        Also likely, the cause of the issue bc it was resolved after this!! :)
+   */
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -44,6 +73,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     } //closing bracket for func viewDidLoad
+    
 // comment test 
 
 }
