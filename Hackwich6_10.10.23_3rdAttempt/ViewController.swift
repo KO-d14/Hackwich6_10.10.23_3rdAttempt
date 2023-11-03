@@ -30,23 +30,34 @@ Last step: build & run
 
 */
 
+/*
+ Problem Set (PS) #2: Set Subtitle Text in TableView Cell
+ --------------------------------------------------------
+ 2. (code below)
+ 3. Select the prototype cell (“cell”) in the document outline and in the Attributes Inspector, set up your cell to display a subtitle. Set the style to, “Subtitle”. (1 point)
+ 4. (code below)
+ 
+ */
 import UIKit
 
 //HW6 PART 1-8: IN-CLASS ASSIGNMENT
 //Part 5: Let’s Set Up ViewController.Swift file with delegates and delegate methods
     //5-#1. Open your ViewController.swift file and add these protocols, UITableViewDataSource & UITableViewDelegate, on the “class” line
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    //
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
+{
+    
+//PART 8- #2. Create an outlet for your table view and name it, “tableView”.
+      /* ***NOTE: ^ I missed this step when doing this 3rd HW6
+            Also likely, the cause of the issue bc it was resolved after this!! :)
+       */
+        @IBOutlet weak var tableView: UITableView!
+        
 //Part 6: Create an Array using an Array Literal
     //6-#1. Declare an array and name it“myFriendsArray” and add three names to your array.
     var myClassmatesArray = ["Sayuri", "Kapena", "Brendan"]
     
-//2. Create an outlet for your table view and name it, “tableView”.
-  /* ***NOTE: ^ I missed this step when doing this 3rd HW6
-        Also likely, the cause of the issue bc it was resolved after this!! :)
-   */
-    @IBOutlet weak var tableView: UITableView!
-    
+//PS#2-#2 Create a third array and name it, “myfriendsHomeArray” that contains the names of the city that your friends live in. (1 point)
+    var myClassmatesHomeArray = ["Aiea", "Kaneohe", "Honolulu"]
     
     //5-#2. TableView Methods to implement:
     //There are two required methods when using the UITableViewDataSource Protocol:
@@ -63,10 +74,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //7-#2. Within the code block of the cellForRowAt indexPath function, please add the lines of code in blue text.
          let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let text = myClassmatesArray[indexPath.row]
+        
+//PS#2-#4. Add the highlighted line of code in the tableview function: cellForRowAtIndex to display your second array in the subtitle of the table view cell.
+        cell.detailTextLabel?.text = myClassmatesHomeArray[indexPath.row]
+        
+    //7-#2.
         cell.textLabel?.text = text
         return cell
         
-    } //closing bracket for func tableView */
+    } //closing bracket for func tableView
     
 
     override func viewDidLoad() {
@@ -74,6 +90,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view.
     } //closing bracket for func viewDidLoad
     
+//-------------------------------------
 // comment test
     // running with issues 
 /*
